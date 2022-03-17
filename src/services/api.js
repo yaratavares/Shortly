@@ -1,13 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = "http://localhost:4000";
 
 function createConfig(token) {
   return {
     headers: {
-      'Authorization': `Bearer ${token}`
-    }
-  }
+      Authorization: `Bearer ${token}`,
+    },
+  };
 }
 
 async function createUser(user) {
@@ -43,7 +43,7 @@ const api = {
   login,
   getUser,
   shortenLink,
-  deleteLink
-}
+  deleteLink,
+};
 
 export default api;
